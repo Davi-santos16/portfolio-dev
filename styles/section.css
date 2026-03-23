@@ -1,0 +1,139 @@
+.projetos {
+  padding-block: 72px 144px;
+  padding-inline: 120px;
+
+  & .titulo-projetos {
+    text-align: center;
+  }
+  & .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    gap: 24px;
+  }
+
+  & img {
+    width: 306px;
+    height: 156px;
+    border-radius: 8px;
+    margin-left: auto;
+    /* object-fit: cover; */
+  }
+
+  & .card {
+    height: 280px;
+    background-color: #282b33;
+    border-radius: 12px;
+    padding: 12px;
+
+    &:hover {
+      border: 1px solid var(--gray-100);
+    }
+
+    & h5 {
+      color: var(--gray-100);
+      font: var(--Title-sm);
+      margin-top: 15px;
+    }
+    & p {
+      margin-top: 10px;
+      color: var(--gray-200);
+      font: var(--Text-sm);
+    }
+  }
+}
+
+.Servicos {
+  padding-block: 88px 120px;
+  padding-inline: 120px;
+  background-color: var(--gray-600);
+
+  & .service {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    & img {
+      width: 48px;
+      height: 48px;
+    }
+
+    & .card-service {
+      width: 280px;
+      height: 155px;
+      padding: 20px;
+      border-radius: 12px;
+      border: solid 1px var(--gray-500);
+
+      & h5 {
+        color: var(--gray-100);
+        margin-top: 20px;
+        font: var(--Title-sm);
+      }
+      & p {
+        font: var(--text-sm);
+        margin-top: 10px;
+        color: var(--gray-200);
+      }
+    }
+  }
+}
+
+.contatos {
+  height: 100vh;
+
+  background-image: url("/assets/imgs/Background_Contacts.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 128px 200px;
+
+  & .titulo-contatos {
+    text-align: center;
+    display: grid;
+    gap: 8px;
+
+    & .Title {
+      color: #bb72e9;
+      font: var(--Subtitle);
+    }
+    & h4 {
+      color: var(--gray-100);
+      font: var(--Title-md);
+    }
+
+    & p {
+      color: var(--gray-200);
+      font: var(--Text-md);
+    }
+  }
+
+  & .contatos-links {
+    margin-top: 48px;
+    display: grid;
+    justify-content: center;
+    gap: 16px;
+
+    & .card-link {
+      background-color: #282b33;
+      width: 400px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-radius: 8px;
+      gap: 10px;
+
+      &:hover{
+        border: solid 2px #3996DB;
+      }
+
+    
+      & p {
+        margin-right: auto;
+        color: var(--gray-200);
+        font: var(--Text-md);
+      }
+    }
+  }
+}

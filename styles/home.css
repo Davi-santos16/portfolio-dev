@@ -1,0 +1,66 @@
+.home {
+  text-align: center;
+  background-image: url('../assets/imgs/Background_Intro.jpg');
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover; 
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  & .CaretDoubleDown {
+    margin-top: 94px;
+  }
+
+
+
+  & .hero {
+    & .subtitle {
+      color: var(--gray-200);
+      font: var(--Subtitle);
+      margin: 3.5rem 0 0.5rem;
+
+      & span {
+        color: var(--red);
+      }
+    }
+
+    & h1 {
+      color: var(--gray-100);
+      font: var(--Title-lg);
+      margin-bottom: 1.25rem;
+    }
+    & .description {
+      font: var(--Text-sm);
+      color: var(--gray-300);
+      margin-bottom: 80px;
+    }
+    
+  }
+
+  & .skills {
+    display: inline-flex;
+    justify-content: center;
+    gap: 8px;
+
+    & span {
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 0.5rem 1rem;
+      border-radius: 125px;
+      background-color: var(--gray-400);
+      color: var(--gray-200);
+      font: var(--Text-md);
+
+      & img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
